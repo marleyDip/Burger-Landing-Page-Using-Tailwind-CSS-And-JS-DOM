@@ -553,3 +553,23 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+.header {
+  background-color: blue;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  max-width: 1024px;
+  background-color: #0f004a;
+  margin: auto;
+  height: 56px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
