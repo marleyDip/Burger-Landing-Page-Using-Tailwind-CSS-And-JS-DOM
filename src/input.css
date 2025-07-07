@@ -45,11 +45,15 @@
     }
 
     .paragraph {
-        @apply text-paragraphColor text-lg leading-5 text-justify;
+        @apply text-paragraphColor text-lg leading-5;
     }
 }
 
 .tabs_wrap ul li:hover,
 .tabs_wrap ul li.active {
     @apply bg-secondaryColor text-blackColor;
+}
+
+.swiper-pagination-bullet {
+    @apply bg-green-500 w-3 h-3;
 }
