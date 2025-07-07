@@ -810,10 +810,6 @@ video {
   gap: 1.25rem;
 }
 
-.gap-y-2{
-  row-gap: 0.5rem;
-}
-
 .gap-y-5{
   row-gap: 1.25rem;
 }
@@ -979,10 +975,6 @@ video {
   font-family: Oswald, sans-serif;
 }
 
-.font-dmsans{
-  font-family: DM Sans, sans-serif;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -991,6 +983,10 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-\[12px\]{
+  font-size: 12px;
 }
 
 .text-base{
@@ -1011,6 +1007,18 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[14px\]{
+  font-size: 14px;
+}
+
+.text-\[16px\]{
+  font-size: 16px;
+}
+
+.text-\[15px\]{
+  font-size: 15px;
 }
 
 .font-bold{
@@ -1055,20 +1063,12 @@ video {
   transition-duration: 200ms;
 }
 
-.duration-300{
-  transition-duration: 300ms;
-}
-
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .ease-linear{
   transition-timing-function: linear;
-}
-
-.ease-in-out{
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .home__title,
@@ -1158,16 +1158,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:translate-y-1:hover{
-  --tw-translate-y: 0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:rotate-180:hover{
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1189,11 +1179,6 @@ video {
   background-color: rgb(255 204 0 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:text-secondaryColor:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 204 0 / var(--tw-text-opacity, 1));
-}
-
 .hover\:text-greenColor:hover{
   --tw-text-opacity: 1;
   color: rgb(0 121 54 / var(--tw-text-opacity, 1));
@@ -1202,6 +1187,11 @@ video {
 .hover\:text-redColor:hover{
   --tw-text-opacity: 1;
   color: rgb(204 52 51 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-secondaryColor:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 204 0 / var(--tw-text-opacity, 1));
 }
 
 .hover\:opacity-75:hover{
