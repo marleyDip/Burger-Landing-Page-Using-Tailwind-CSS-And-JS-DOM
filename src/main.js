@@ -101,3 +101,39 @@ const swiper = new Swiper(".swiper", {
   },
 });
 /* swiper */
+
+/* Year */
+document.getElementById("year").textContent = new Date().getFullYear();
+/* Year */
+
+/* Scroll Up */
+const scrollUp = () => {
+  const scrollUpBtn = document.getElementById("scroll-up");
+
+  if (this.scrollY >= 250) {
+    scrollUpBtn.classList.remove("-bottom-1/2");
+
+    scrollUpBtn.classList.add("bottom-4");
+  } else {
+    scrollUpBtn.classList.add("-bottom-1/2");
+
+    scrollUpBtn.classList.remove("bottom-4");
+  }
+};
+
+window.addEventListener("scroll", scrollUp);
+/* Scroll Up */
+
+/* Change Background Header */
+const scrollHeader = () => {
+  const scrollUpBtn = document.getElementById("header");
+
+  if (this.scrollY >= 50) {
+    scrollUpBtn.classList.add("border-b", "border-secondaryColor");
+  } else {
+    scrollUpBtn.classList.remove("border-b", "border-secondaryColor");
+  }
+};
+
+window.addEventListener("scroll", scrollHeader);
+/* Change Background Header */
