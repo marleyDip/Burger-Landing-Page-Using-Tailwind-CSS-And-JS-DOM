@@ -21,3 +21,52 @@ navLink.forEach((link) => {
   });
 });
 /* Toggle Button */
+
+/* Tabs & Items Select */
+const tabs = document.querySelectorAll(".tabs_wrap ul li");
+
+const all = document.querySelectorAll(".item__wrap");
+
+const foods = document.querySelectorAll(".food");
+
+const snacks = document.querySelectorAll(".snack");
+
+const beverages = document.querySelectorAll(".beverage");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+
+    tab.classList.add("active");
+
+    // particularly item show
+    const tabVal = tab.getAttribute("data-tabs");
+
+    //console.log(tabVal);
+
+    all.forEach((item) => {
+      item.style.display = "none";
+    });
+
+    if (tabVal == "food") {
+      foods.forEach((item) => {
+        item.style.display = "block";
+      });
+    } else if (tabVal == "snack") {
+      snacks.forEach((item) => {
+        item.style.display = "block";
+      });
+    } else if (tabVal == "beverage") {
+      beverages.forEach((item) => {
+        item.style.display = "block";
+      });
+    } else {
+      all.forEach((item) => {
+        item.style.display = "block";
+      });
+    }
+  });
+});
+/* Tabs & Items Select */
