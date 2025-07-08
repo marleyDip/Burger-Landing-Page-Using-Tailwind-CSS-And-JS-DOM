@@ -131,7 +131,7 @@
           <!-- Image -->
           <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
             <img
-              class="w-60 md:w-full"
+              class="home__image w-60 md:w-full"
               src="img/home-image.png"
               alt="Home Image"
             />
@@ -139,7 +139,7 @@
           <!-- Image -->
 
           <!-- Info, Icon, Btn -->
-          <div class="text-center md:basis-1/2 lg:basis-2/5">
+          <div class="home__content text-center md:basis-1/2 lg:basis-2/5">
             <h1 class="home__title">Happy Tummy with Tasty Burger</h1>
 
             <div class="separator mx-auto md:mx-0"></div>
@@ -190,7 +190,7 @@
         <div class="container flex flex-col gap-5 md:flex-row">
           <!-- card 1 -->
           <div
-            class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1"
+            class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1"
           >
             <!-- image -->
             <div class="basis-1/3 relative">
@@ -218,7 +218,7 @@
 
           <!-- card 2 -->
           <div
-            class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1"
+            class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1"
           >
             <!-- image -->
             <div class="basis-1/3 relative">
@@ -248,7 +248,7 @@
 
           <!-- card 3 -->
           <div
-            class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1"
+            class="category__card bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1"
           >
             <!-- image -->
             <div class="basis-1/3 relative">
@@ -345,11 +345,15 @@
       <section id="about">
         <div class="container flex flex-col gap-10 lg:flex-row">
           <!-- image -->
-          <img class="flex-1" src="img/about.jpg" alt="About Image" />
+          <img
+            class="about__image flex-1"
+            src="img/about.jpg"
+            alt="About Image"
+          />
           <!-- image -->
 
           <!-- Text -->
-          <div class="flex-1">
+          <div class="about__content flex-1">
             <h2 class="section__title">
               Find Food And Drinks, All in one Place For Your Taste
             </h2>
@@ -442,7 +446,7 @@
           <!-- heading -->
 
           <!-- Food Items -->
-          <div class="py-10">
+          <div class="menu__items py-10">
             <ul
               class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12"
             >
@@ -1029,7 +1033,7 @@
         id="review"
         class="bg-primaryColorLight dark:bg-darkColorLight py-20"
       >
-        <div class="container">
+        <div class="customer__review container">
           <!-- Heading -->
           <div class="max-w-md mx-auto text-center">
             <h2 class="section__title">customer Review</h2>
@@ -1306,7 +1310,7 @@
 
     <!-- Footer Start -->
     <footer>
-      <section id="footer">
+      <section class="footer">
         <div class="container">
           <!-- Logo, Support, Contact & Address -->
           <ul
@@ -1452,6 +1456,9 @@
 
     <!-- Swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- main js -->
     <script src="/src/main.js"></script>

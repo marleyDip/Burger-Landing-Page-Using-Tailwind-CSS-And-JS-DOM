@@ -193,3 +193,56 @@ const activeLink = () => {
 };
 window.addEventListener("scroll", activeLink);
 /* scroll Active link */
+
+/* Scroll Reveal Animation */
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  reset: true,
+});
+
+// home
+sr.reveal(".home__image");
+sr.reveal(".home__content", {
+  origin: "bottom",
+});
+
+// category
+sr.reveal(".category__card", {
+  interval: 300,
+});
+
+// promo
+sr.reveal(".promo__card-1", {
+  origin: "left",
+});
+
+sr.reveal(".promo__card-2", {
+  origin: "right",
+});
+
+// about
+sr.reveal(".about__image", {
+  origin: "bottom",
+});
+
+sr.reveal(".about__content", {
+  origin: "top",
+});
+
+// menu
+sr.reveal(".menu__items", {
+  origin: "left",
+});
+
+// review
+sr.reveal(".customer__review", {
+  origin: "right",
+});
+
+// footer
+sr.reveal(".footer");
+
+/* Scroll Reveal Animation */
