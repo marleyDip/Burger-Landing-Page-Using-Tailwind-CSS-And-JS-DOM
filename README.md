@@ -15,5 +15,3 @@
 ## 📸 *Project Preview*
 
 ![burger-tailwind-css](https://github.com/user-attachments/assets/7e3685dd-0b6e-4bfa-897b-49bafb6c4633)
-
-
